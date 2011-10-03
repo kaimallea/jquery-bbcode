@@ -1,0 +1,23 @@
+.bbcode-editor {
+    width: 450px;
+}
+
+.bbcode-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #999;
+    resize: vertical;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ie-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bbcode-preview {
+    font-family: "Courier New";
+    background: #F2EAD9; 
+    margin: 0 auto;
+    padding: 5px;
+}
