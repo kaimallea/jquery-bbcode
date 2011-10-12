@@ -1,5 +1,23 @@
 .bbcode-editor {
-    width: 450px;
+    width: 100%;
+}
+
+.bbcode-toolbar {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.bbcode-toolbar li {   
+    display: inline;
+    padding-left: 18px;    
+    margin-left: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.bbcode-toolbar li:hover {
+    opacity: 1;
 }
 
 .bbcode-textarea {
@@ -16,8 +34,13 @@
 }
 
 .bbcode-preview {
+    color: #777;    
     font-family: "Courier New";
-    background: #F2EAD9; 
+    background: #F8F8F8; 
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
+}
+
+.bbcode-preview img {
+    max-width: 100%;
 }
