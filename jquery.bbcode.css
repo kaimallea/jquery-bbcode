@@ -3,7 +3,7 @@
 }
 
 .bbcode-toolbar {
-    margin: 0;
+    margin: 0 0 5px 0;
     list-style-type: none;
     padding: 0;
 }
