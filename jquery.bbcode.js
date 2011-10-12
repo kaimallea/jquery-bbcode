@@ -268,12 +268,16 @@ sub:function(a,b){return'<iframe class="youtube-player" type="text/html" width="
             var $this = $(this);
             if ($this.is('textarea')) {
                 var $editor = $(editor),
-                    $cloned_textarea = $this.clone().addClass('bbcode-textarea');
+                    $cloned_textarea = $this.clone().addClass('bbcode-textarea'),
+                    render_timer = 0;
                 
                 $editor.find('textarea').replaceWith($cloned_textarea);
                 
                 $cloned_textarea.bind('keyup', function () {
-                    $cloned_textarea.next('.bbcode-preview').html(bbcode.render($cloned_textarea.val()));
+                    clearTimeout(render_timer);
+                    render_timer = setTimeout(function () {
+                        $cloned_textarea.next('.bbcode-preview').html(bbcode.render($cloned_textarea.val()));
+                    }, 300);
                 });
 
                 $cloned_textarea.bind('focus', function () {
